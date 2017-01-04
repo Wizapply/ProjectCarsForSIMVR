@@ -1,3 +1,10 @@
+#ProjectCARS for SIMVR
+====
+Slightly Mad Studios社が開発をしたレーシングシミュレーションゲーム「Project CARS」にVRライドシミュレータ「SIMVR」を動作させるためのツール・プログラム群です。GPLv2にて提供されております。
+  
+ProjectCARS - http://www.projectcarsgame.com/  
+SIMVR - http://simvr01.com/  
+
 # Console
 起動するとProjectCarsのデータをSIMVRに流し続ける。
 
