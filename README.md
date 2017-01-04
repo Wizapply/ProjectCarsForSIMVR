@@ -11,8 +11,8 @@
 ## build方法
 [Release](https://github.com/Wizapply/ProjectCarsForSIMVR/releases)からProjectCarsForSIMVR.zipを取得する。  
 zipを展開し、ProjectCarsForSIMVR/Console/build/windows_vs2015/ProjectCarsForSIMVR.slnからVisual Studioを起動する。  
-ビルド設定をDebug/Releaseのx86にしてビルドするとProjectCarsForSIMVR.exeが生成される。  
-動作させるためにはSimvrSDK\bin\x86へのパスを通すかexeと同じディレクトリにsimvr.dllを配置する。
+ビルド設定をDebug/Releaseのx86にしてビルドするとProjectCarsForSIMVR.exeが生成される。    
+動作させるためにはSimvrSDK\bin\x86へのパスを通すかexeと同じディレクトリにsimvr.dllを配置する。  
 
 # Unity
 CRESTを起動してこのスクリプトを動作させるとインスペクタからデータの動きを見ることができる。 
