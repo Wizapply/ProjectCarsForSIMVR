@@ -1,11 +1,12 @@
-﻿#include "simvr.h"
-#include "simvr_log.h"
+﻿#include <simvr.h>
+#include <simvr_log.h>
 
 #include "ProjectCarsMapper.h"
 
 #include <iostream>
 #include <thread>
 
+/* -- Main -------------------------------------------------------------- */
 SIMVRSDK::SIMVRDataPacket DefaultPacket()
 {
 	SIMVRSDK::SIMVRDataPacket packet = {};
@@ -13,6 +14,8 @@ SIMVRSDK::SIMVRDataPacket DefaultPacket()
 	packet.axis2 = 0.5f;
 	packet.axis3 = 0.5f;
 	packet.axis4 = 0.5f;
+	packet.axis5 = 0.5f;
+	packet.axis6 = 0.5f;
 
 	//Axis speed/accel controls
 	packet.speedAxis123 = 1.0f;
@@ -31,6 +34,7 @@ SIMVRSDK::SIMVRDataPacket DefaultPacket()
 	packet.rotationMotionRatio = 0.3f;
 	packet.gravityMotionRatio = 0.7f;
 
+	packet.commandCount = 0;
 	return packet;
 }
 
