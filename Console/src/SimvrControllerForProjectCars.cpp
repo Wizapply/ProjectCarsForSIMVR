@@ -31,10 +31,11 @@ SIMVRSDK::SIMVRDataPacket DefaultPacket()
 	packet.sway = 0.0f;
 	packet.surge = 0.0f;
 
-	packet.rotationMotionRatio = 0.3f;
-	packet.gravityMotionRatio = 0.7f;
+	packet.rotationMotionRatio = 0.4f;
+	packet.gravityMotionRatio = 0.9f;
 
 	packet.commandCount = 0;
+
 	return packet;
 }
 
@@ -70,11 +71,14 @@ int main()
 	SIMVRSDK::SIMVR simvr{};
 
 	std::cout << "SIMVR SDK version" << simvr.GetVersion() << std::endl;
+	std::cout << "For Project Cars" << std::endl;
 
 	simvr.Open("");
 
 	simvr.SetOriginMode(false);
 	simvr.SetAxisProcessingMode(true);
+
+	std::this_thread::sleep_for(std::chrono::seconds(2));
 
 	auto packet = DefaultPacket();
 
@@ -84,7 +88,7 @@ int main()
 
 		ProjectCars::Mapper mapper;
 		auto property = mapper.Get();
-		packet.roll = 0;
+		packet.roll = Scale(property.roll, 1.0f);
 		packet.pitch = 0;
 		packet.yaw = Scale(-property.yaw, 1.3f);
 		packet.heave = Scale(property.heave, 20.f);
