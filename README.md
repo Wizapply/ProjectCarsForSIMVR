@@ -1,6 +1,6 @@
 ProjectCARS for SIMVR
 -------------
-Slightly Mad Studios社製レーシングシミュレーション「Project CARS」とWizapply製VRライドシミュレータ「SIMVR」を組み合わせて動作させるためのツール・プログラム群。
+Slightly Mad Studios社製レーシングシミュレーション「Project CARS」とWizapply製VRライドシミュレータ「SIMVR」「ANTSEAT」を組み合わせて動作させるためのツール・プログラム群。
   
 ProjectCARS - http://www.projectcarsgame.com/  
 SIMVR - http://simvr01.com/  
@@ -9,7 +9,7 @@ SIMVR - http://simvr01.com/
 起動するとProjectCarsのデータをSIMVRに流し続ける。
 
 ## 使い方
-1. SIMVRとPCを接続する。  
+1. SIMVRまたはANTSEATとPCを接続する。  
 2. Consoleプログラムを起動する。  
 3. Project Carsを起動する。  
 4. Options -> Visual -> HardwareからShared Memoryを有効にする。  
